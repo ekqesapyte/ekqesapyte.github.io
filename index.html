@@ -1,0 +1,1252 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>去看片MV_高清原创音乐影像_品牌官方视频门户</title>
+<meta name="description" content="去看片MV官方网站，专注高清原创音乐影像与MV内容生态，汇聚专业创作者、品牌企划与幕后故事，为观众与音乐人搭建值得信赖的视频社区。">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230f1220'/%3E%3Ccircle cx='32' cy='32' r='19' fill='none' stroke='%23ff4d6d' stroke-width='4'/%3E%3Cpath d='M27 22l16 10-16 10z' fill='%23ffd166'/%3E%3C/svg%3E">
+<style>
+  :root{
+    --qkp-bg:#0c0e17;
+    --qkp-bg-2:#12152240;
+    --qkp-panel:#141827;
+    --qkp-panel-2:#1a1f31;
+    --qkp-line:#262c42;
+    --qkp-text:#e8ebf5;
+    --qkp-muted:#9aa3bd;
+    --qkp-neon:#ff4d6d;
+    --qkp-neon-soft:#ff4d6d22;
+    --qkp-mint:#4de3c1;
+    --qkp-gold:#ffd166;
+    --qkp-violet:#8b7bff;
+    --qkp-radius:18px;
+    --qkp-sticky:104px;
+    --qkp-max:1180px;
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{
+    margin:0;
+    background:
+      radial-gradient(1100px 600px at 82% -8%, #ff4d6d1f, transparent 62%),
+      radial-gradient(900px 520px at 6% 10%, #8b7bff1c, transparent 60%),
+      linear-gradient(180deg,#0c0e17 0%,#0a0c14 100%);
+    color:var(--qkp-text);
+    font-family:"PingFang SC","Hiragino Sans GB","Microsoft YaHei","Segoe UI",system-ui,sans-serif;
+    line-height:1.72;
+    -webkit-font-smoothing:antialiased;
+  }
+  img{max-width:100%;display:block}
+  a{color:inherit;text-decoration:none}
+  button{font-family:inherit}
+  .qkp-wrap{width:100%;max-width:var(--qkp-max);margin:0 auto;padding:0 22px}
+  .qkp-section{padding:64px 0;scroll-margin-top:var(--qkp-sticky)}
+  .qkp-kicker{
+    display:inline-flex;align-items:center;gap:8px;
+    font-size:12px;letter-spacing:.16em;text-transform:uppercase;
+    color:var(--qkp-mint);font-weight:700;margin:0 0 12px;
+  }
+  .qkp-kicker::before{content:"";width:22px;height:2px;background:var(--qkp-mint);display:block}
+  .qkp-h2{font-size:clamp(23px,3.2vw,33px);line-height:1.3;margin:0 0 12px;letter-spacing:-.01em}
+  .qkp-h3{font-size:18px;line-height:1.45;margin:0 0 8px;letter-spacing:-.01em}
+  .qkp-lede{color:var(--qkp-muted);max-width:66ch;margin:0 0 30px;font-size:15.5px}
+  .qkp-accent{color:var(--qkp-neon)}
+  .qkp-btn{
+    display:inline-flex;align-items:center;justify-content:center;gap:8px;
+    padding:11px 20px;border-radius:999px;border:1px solid var(--qkp-line);
+    background:var(--qkp-panel);color:var(--qkp-text);font-size:14px;cursor:pointer;
+    transition:transform .18s ease,border-color .18s ease,background .18s ease,box-shadow .18s ease;
+  }
+  .qkp-btn:hover{transform:translateY(-2px);border-color:var(--qkp-neon);box-shadow:0 10px 26px #ff4d6d22}
+  .qkp-btn--primary{background:linear-gradient(135deg,#ff4d6d,#8b7bff);border-color:transparent;color:#fff;font-weight:700}
+  .qkp-btn--ghost{background:transparent}
+  .qkp-btn--sm{padding:7px 14px;font-size:13px}
+  .qkp-tag{
+    display:inline-block;padding:3px 10px;border-radius:999px;
+    background:#4de3c114;color:var(--qkp-mint);border:1px solid #4de3c13d;
+    font-size:12px;line-height:1.6;white-space:nowrap;
+  }
+  .qkp-tag--pink{background:var(--qkp-neon-soft);color:#ff8fa3;border-color:#ff4d6d3d}
+  .qkp-tag--gold{background:#ffd1661a;color:var(--qkp-gold);border-color:#ffd1663d}
+  .qkp-tag--violet{background:#8b7bff1a;color:#b3a9ff;border-color:#8b7bff3d}
+
+  /* ---------- 吸顶：公告条 + 页头 ---------- */
+  .qkp-topbar{position:sticky;top:0;z-index:80}
+  .qkp-notice{
+    background:linear-gradient(90deg,#ff4d6d,#8b7bff 58%,#4de3c1);
+    color:#0b0d14;font-weight:600;font-size:13.5px;
+  }
+  .qkp-notice__inner{display:flex;align-items:center;gap:12px;padding:7px 0;flex-wrap:wrap}
+  .qkp-notice__pill{
+    background:#0b0d14;color:#ffd166;font-size:11px;font-weight:800;
+    letter-spacing:.12em;padding:2px 9px;border-radius:999px;flex:none;
+  }
+  .qkp-notice__text{flex:1 1 320px;min-width:0}
+  .qkp-notice__link{font-weight:800;border-bottom:1px solid #0b0d1466;white-space:nowrap}
+  .qkp-header{
+    background:#0c0e17e6;backdrop-filter:blur(14px);
+    border-bottom:1px solid var(--qkp-line);
+  }
+  .qkp-header__inner{display:flex;align-items:center;gap:18px;padding:12px 0}
+  .qkp-logo{display:flex;align-items:center;gap:10px;flex:none}
+  .qkp-logo__mark{
+    width:38px;height:38px;border-radius:11px;flex:none;
+    background:linear-gradient(135deg,#ff4d6d,#8b7bff);
+    display:grid;place-items:center;font-weight:900;color:#fff;font-size:16px;
+    box-shadow:0 6px 18px #ff4d6d33;
+  }
+  .qkp-logo__name{font-size:17px;font-weight:800;letter-spacing:.02em;line-height:1.2}
+  .qkp-logo__sub{font-size:11px;color:var(--qkp-muted);letter-spacing:.1em}
+  .qkp-nav{display:flex;align-items:center;gap:4px;margin-left:6px;flex-wrap:wrap}
+  .qkp-nav a{
+    padding:7px 11px;border-radius:9px;font-size:14px;color:var(--qkp-muted);
+    transition:color .15s,background .15s;
+  }
+  .qkp-nav a:hover{color:#fff;background:#ffffff0f}
+  .qkp-search{
+    margin-left:auto;display:flex;align-items:center;gap:6px;
+    background:var(--qkp-panel);border:1px solid var(--qkp-line);
+    border-radius:999px;padding:4px 4px 4px 14px;min-width:230px;
+    transition:border-color .18s;
+  }
+  .qkp-search:focus-within{border-color:var(--qkp-neon)}
+  .qkp-search input{
+    background:transparent;border:0;outline:0;color:var(--qkp-text);
+    font-size:13.5px;width:100%;min-width:0;padding:4px 0;
+  }
+  .qkp-search input::placeholder{color:#68718c}
+  .qkp-search button{
+    border:0;background:linear-gradient(135deg,#ff4d6d,#8b7bff);color:#fff;
+    border-radius:999px;padding:6px 13px;font-size:13px;cursor:pointer;font-weight:700;
+  }
+  .qkp-search__hint{
+    position:absolute;margin-top:6px;font-size:12.5px;color:var(--qkp-gold);
+    background:#1a1f31f2;border:1px solid var(--qkp-line);border-radius:10px;
+    padding:5px 11px;display:none;z-index:90;
+  }
+  .qkp-search__hint.is-on{display:block}
+  .qkp-burger{
+    display:none;margin-left:auto;width:40px;height:40px;border-radius:11px;
+    border:1px solid var(--qkp-line);background:var(--qkp-panel);color:var(--qkp-text);
+    cursor:pointer;font-size:17px;
+  }
+  .qkp-mobile-nav{display:none;border-top:1px solid var(--qkp-line);padding:8px 0 14px}
+  .qkp-mobile-nav.is-open{display:block}
+  .qkp-mobile-nav a{display:block;padding:10px 4px;border-radius:9px;color:var(--qkp-muted);font-size:15px}
+  .qkp-mobile-nav a:hover{background:#ffffff0d;color:#fff}
+
+  /* ---------- 首屏：左文右侧大图与数据条 ---------- */
+  .qkp-hero{padding:56px 0 20px}
+  .qkp-hero__grid{display:grid;grid-template-columns:minmax(0,1.05fr) minmax(0,1fr);gap:44px;align-items:center}
+  .qkp-hero__badge{
+    display:inline-flex;align-items:center;gap:8px;font-size:12.5px;font-weight:700;
+    color:var(--qkp-mint);border:1px solid #4de3c140;background:#4de3c112;
+    padding:5px 13px;border-radius:999px;margin-bottom:18px;
+  }
+  .qkp-hero h1{
+    font-size:clamp(30px,5vw,56px);line-height:1.08;margin:0 0 16px;
+    letter-spacing:-.025em;font-weight:900;
+  }
+  .qkp-hero h1 em{
+    font-style:normal;background:linear-gradient(120deg,#ff4d6d,#ffd166 55%,#4de3c1);
+    -webkit-background-clip:text;background-clip:text;color:transparent;
+  }
+  .qkp-hero__lead{color:#b9c1d6;font-size:16px;margin:0 0 20px;max-width:52ch}
+  .qkp-hero__intro{
+    font-size:14.5px;color:var(--qkp-muted);border-left:3px solid var(--qkp-neon);
+    padding:2px 0 2px 16px;margin:0 0 24px;max-width:56ch;
+  }
+  .qkp-hero__actions{display:flex;flex-wrap:wrap;gap:11px;margin-bottom:26px}
+  .qkp-stats{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;max-width:520px}
+  .qkp-stat{
+    background:linear-gradient(160deg,#1a1f31,#141827);
+    border:1px solid var(--qkp-line);border-radius:14px;padding:13px 14px;
+  }
+  .qkp-stat__num{font-size:21px;font-weight:900;letter-spacing:-.02em;color:var(--qkp-gold)}
+  .qkp-stat__label{font-size:12px;color:var(--qkp-muted);letter-spacing:.04em}
+  .qkp-hero__visual{position:relative}
+  .qkp-hero__frame{
+    border-radius:24px;overflow:hidden;border:1px solid var(--qkp-line);
+    background:var(--qkp-panel);box-shadow:0 26px 70px #00000066;
+  }
+  .qkp-hero__frame img{width:100%;aspect-ratio:4/3.15;object-fit:cover}
+  .qkp-hero__float{
+    position:absolute;left:-14px;bottom:18px;background:#141827f2;
+    border:1px solid var(--qkp-line);border-radius:14px;padding:11px 15px;
+    box-shadow:0 16px 40px #00000073;backdrop-filter:blur(8px);
+  }
+  .qkp-hero__float b{display:block;font-size:13.5px}
+  .qkp-hero__float span{font-size:11.5px;color:var(--qkp-muted)}
+  .qkp-hero__wave{display:flex;align-items:flex-end;gap:3px;height:26px;margin-top:8px}
+  .qkp-hero__wave i{width:4px;background:linear-gradient(180deg,#4de3c1,#ff4d6d);border-radius:2px;animation:qkpWave 1.3s ease-in-out infinite}
+  .qkp-hero__wave i:nth-child(1){height:38%;animation-delay:0s}
+  .qkp-hero__wave i:nth-child(2){height:72%;animation-delay:.12s}
+  .qkp-hero__wave i:nth-child(3){height:52%;animation-delay:.24s}
+  .qkp-hero__wave i:nth-child(4){height:94%;animation-delay:.36s}
+  .qkp-hero__wave i:nth-child(5){height:60%;animation-delay:.48s}
+  .qkp-hero__wave i:nth-child(6){height:80%;animation-delay:.6s}
+  .qkp-hero__wave i:nth-child(7){height:44%;animation-delay:.72s}
+  @keyframes qkpWave{0%,100%{transform:scaleY(.6)}50%{transform:scaleY(1.15)}}
+  @media (prefers-reduced-motion:reduce){.qkp-hero__wave i{animation:none}}
+
+  /* ---------- 卡片通用 ---------- */
+  .qkp-card{
+    background:linear-gradient(165deg,#161a2a,#121522);
+    border:1px solid var(--qkp-line);border-radius:var(--qkp-radius);
+    overflow:hidden;min-width:0;
+    transition:transform .2s ease,border-color .2s ease,box-shadow .2s ease;
+  }
+  .qkp-card:hover{transform:translateY(-4px);border-color:#3b4468;box-shadow:0 20px 44px #00000059}
+  .qkp-card__body{padding:16px 18px 18px;min-width:0}
+  .qkp-card__title{font-size:15.5px;font-weight:800;line-height:1.5;margin:0 0 7px;overflow-wrap:anywhere}
+  .qkp-card__desc{font-size:13.5px;color:var(--qkp-muted);margin:0 0 11px}
+  .qkp-card__meta{display:flex;flex-wrap:wrap;gap:8px 14px;font-size:12px;color:#7f89a6}
+  .qkp-thumb{position:relative;aspect-ratio:16/9;overflow:hidden;background:#0f1220}
+  .qkp-thumb img{width:100%;height:100%;object-fit:cover}
+  .qkp-thumb__play{
+    position:absolute;inset:0;display:grid;place-items:center;pointer-events:none;
+  }
+  .qkp-thumb__play span{
+    width:44px;height:44px;border-radius:50%;display:grid;place-items:center;
+    background:#0b0d14b3;border:1px solid #ffffff38;color:#fff;font-size:14px;
+    backdrop-filter:blur(4px);
+  }
+  .qkp-thumb__badge{
+    position:absolute;top:10px;left:10px;background:#0b0d14cc;border-radius:8px;
+    padding:2px 9px;font-size:11.5px;color:var(--qkp-gold);font-weight:700;
+    border:1px solid #ffd1663d;
+  }
+  .qkp-ops{display:flex;flex-wrap:wrap;gap:7px;margin-top:12px}
+  .qkp-op{
+    border:1px solid var(--qkp-line);background:#ffffff08;border-radius:999px;
+    color:#c3cbe0;font-size:12px;padding:4px 11px;cursor:pointer;
+    display:inline-flex;align-items:center;gap:5px;transition:all .16s ease;
+  }
+  .qkp-op:hover{border-color:var(--qkp-neon);color:#fff}
+  .qkp-op.is-liked{background:#ff4d6d26;border-color:#ff4d6d;color:#ffb3c0}
+  .qkp-op.is-saved{background:#8b7bff26;border-color:var(--qkp-violet);color:#c4bcff}
+
+  /* ---------- 焦点 + 视频流（一幅重点大图与文字列表） ---------- */
+  .qkp-focus{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,1fr);gap:22px;margin-bottom:34px}
+  .qkp-focus__main .qkp-card__title{font-size:20px}
+  .qkp-focus__aside{display:flex;flex-direction:column;gap:12px;min-width:0}
+  .qkp-focus__item{
+    display:flex;gap:12px;align-items:flex-start;padding:13px 15px;
+    background:var(--qkp-panel);border:1px solid var(--qkp-line);border-radius:14px;
+    transition:border-color .18s,transform .18s;
+  }
+  .qkp-focus__item:hover{border-color:#3b4468;transform:translateX(3px)}
+  .qkp-focus__num{font-size:15px;font-weight:900;color:var(--qkp-neon);flex:none;width:22px}
+  .qkp-focus__item b{font-size:14px;display:block;line-height:1.5}
+  .qkp-focus__item span{font-size:12.5px;color:var(--qkp-muted)}
+  .qkp-vlist{display:flex;flex-direction:column;gap:14px}
+  .qkp-vlist__row{
+    display:grid;grid-template-columns:190px minmax(0,1fr);gap:16px;
+    background:var(--qkp-panel);border:1px solid var(--qkp-line);border-radius:16px;
+    padding:14px;transition:border-color .18s,background .18s;
+  }
+  .qkp-vlist__row:hover{border-color:#3b4468;background:#1a1f31}
+  .qkp-vlist__row .qkp-thumb{border-radius:11px;aspect-ratio:16/10}
+  .qkp-vlist__body{min-width:0;display:flex;flex-direction:column}
+  .qkp-vlist__body .qkp-card__title{font-size:16px}
+  .qkp-vlist__tags{display:flex;flex-wrap:wrap;gap:6px;margin:0 0 8px}
+
+  /* ---------- 关键词解析 ---------- */
+  .qkp-analysis{background:linear-gradient(180deg,#0f1220,#0c0e17);border-top:1px solid #1e2438;border-bottom:1px solid #1e2438}
+  .qkp-analysis__grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:34px}
+  .qkp-analysis p{color:#b0b9cf;font-size:14.8px;margin:0 0 15px}
+  .qkp-analysis__card{
+    background:var(--qkp-panel);border:1px solid var(--qkp-line);border-radius:16px;
+    padding:20px 22px;margin-bottom:16px;
+  }
+  .qkp-analysis__card h3{color:var(--qkp-gold);font-size:16.5px;margin:0 0 9px}
+  .qkp-analysis__card p:last-child{margin-bottom:0}
+
+  /* ---------- 专题 ---------- */
+  .qkp-topics{display:grid;grid-template-columns:minmax(0,1.2fr) minmax(0,1fr);gap:20px}
+  .qkp-topic{
+    background:linear-gradient(160deg,#171c2d,#121522);
+    border:1px solid var(--qkp-line);border-radius:18px;padding:20px 22px;min-width:0;
+  }
+  .qkp-topic__head{display:flex;justify-content:space-between;align-items:flex-start;gap:12px;margin-bottom:6px}
+  .qkp-topic__status{font-size:11.5px;color:var(--qkp-mint);white-space:nowrap;flex:none}
+  .qkp-topic__list{list-style:none;margin:12px 0 0;padding:0;display:flex;flex-direction:column;gap:9px}
+  .qkp-topic__list li{
+    font-size:13.5px;color:#aab3ca;padding-left:18px;position:relative;
+  }
+  .qkp-topic__list li::before{
+    content:"";position:absolute;left:0;top:.62em;width:7px;height:7px;border-radius:2px;
+    background:linear-gradient(135deg,#ff4d6d,#8b7bff);
+  }
+  .qkp-topic--side .qkp-topic__list li::before{background:linear-gradient(135deg,#4de3c1,#ffd166)}
+
+  /* ---------- 作者矩阵：双列简介 ---------- */
+  .qkp-authors{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}
+  .qkp-author{
+    display:flex;gap:14px;padding:17px;background:var(--qkp-panel);
+    border:1px solid var(--qkp-line);border-radius:16px;min-width:0;
+    transition:border-color .18s,transform .18s;
+  }
+  .qkp-author:hover{border-color:#3b4468;transform:translateY(-3px)}
+  .qkp-avatar{
+    width:54px;height:54px;border-radius:16px;flex:none;display:grid;place-items:center;
+    font-weight:900;font-size:19px;color:#0b0d14;letter-spacing:-.02em;
+  }
+  .qkp-avatar--1{background:linear-gradient(135deg,#ff4d6d,#ffd166)}
+  .qkp-avatar--2{background:linear-gradient(135deg,#4de3c1,#8b7bff)}
+  .qkp-avatar--3{background:linear-gradient(135deg,#ffd166,#4de3c1)}
+  .qkp-avatar--4{background:linear-gradient(135deg,#8b7bff,#ff8fa3)}
+  .qkp-avatar--5{background:linear-gradient(135deg,#ff8fa3,#ffd166)}
+  .qkp-author__body{min-width:0}
+  .qkp-author__name{font-size:15px;font-weight:800;margin:0 0 2px;display:flex;align-items:center;gap:7px;flex-wrap:wrap}
+  .qkp-author__field{font-size:12px;color:var(--qkp-mint);margin:0 0 6px}
+  .qkp-author__stats{font-size:11.5px;color:#7f89a6;margin:0 0 7px;display:flex;gap:12px;flex-wrap:wrap}
+  .qkp-author__bio{font-size:13px;color:var(--qkp-muted);margin:0;line-height:1.68}
+  .qkp-author__more{
+    margin-top:9px;font-size:12.5px;color:var(--qkp-gold);background:none;border:0;
+    padding:0;cursor:pointer;border-bottom:1px dashed #ffd16666;
+  }
+
+  /* ---------- 评价：双列短评 ---------- */
+  .qkp-reviews{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}
+  .qkp-review{
+    background:var(--qkp-panel-2);border:1px solid var(--qkp-line);border-radius:14px;
+    padding:16px 17px;min-width:0;
+  }
+  .qkp-review__head{display:flex;align-items:center;gap:10px;margin-bottom:9px}
+  .qkp-review__dot{
+    width:32px;height:32px;border-radius:50%;flex:none;display:grid;place-items:center;
+    font-size:13px;font-weight:800;color:#0b0d14;
+  }
+  .qkp-review__name{font-size:13.5px;font-weight:700}
+  .qkp-review__src{font-size:11px;color:#7f89a6}
+  .qkp-review__text{font-size:13.5px;color:#b0b9cf;margin:0 0 8px}
+  .qkp-review__stars{font-size:12px;color:var(--qkp-gold);letter-spacing:2px}
+  .qkp-review--quote{background:linear-gradient(150deg,#1b2033,#141827);border-left:3px solid var(--qkp-neon)}
+  .qkp-review--quote .qkp-review__text{font-size:14.5px;color:#d3d9e9;font-style:italic}
+
+  /* ---------- 图文索引 ---------- */
+  .qkp-index{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
+  .qkp-index__item{
+    background:var(--qkp-panel);border:1px solid var(--qkp-line);border-radius:15px;
+    overflow:hidden;min-width:0;transition:border-color .18s,transform .18s;
+  }
+  .qkp-index__item:hover{border-color:#3b4468;transform:translateY(-3px)}
+  .qkp-index__item img{width:100%;aspect-ratio:16/9;object-fit:cover}
+  .qkp-index__text{padding:13px 15px 16px}
+  .qkp-index__text h3{font-size:14.5px;margin:0 0 6px;line-height:1.5}
+  .qkp-index__text p{font-size:12.8px;color:var(--qkp-muted);margin:0}
+
+  /* ---------- 辅助区：动态/FAQ/合作 ---------- */
+  .qkp-aux{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.15fr);gap:22px}
+  .qkp-news{display:flex;flex-direction:column;gap:11px}
+  .qkp-news__item{
+    display:grid;grid-template-columns:78px minmax(0,1fr);gap:13px;
+    padding:12px 14px;background:var(--qkp-panel);border:1px solid var(--qkp-line);
+    border-radius:13px;min-width:0;
+  }
+  .qkp-news__date{font-size:12px;color:var(--qkp-gold);font-weight:800;letter-spacing:.02em}
+  .qkp-news__body b{display:block;font-size:13.7px;line-height:1.5}
+  .qkp-news__body span{font-size:12.5px;color:var(--qkp-muted)}
+  .qkp-faq{display:flex;flex-direction:column;gap:9px}
+  .qkp-faq details{
+    background:var(--qkp-panel);border:1px solid var(--qkp-line);border-radius:12px;
+    padding:0 15px;
+  }
+  .qkp-faq summary{
+    cursor:pointer;list-style:none;padding:13px 0;font-size:14px;font-weight:700;
+    display:flex;justify-content:space-between;gap:12px;align-items:center;
+  }
+  .qkp-faq summary::-webkit-details-marker{display:none}
+  .qkp-faq summary::after{content:"+";color:var(--qkp-neon);font-size:17px;flex:none}
+  .qkp-faq details[open] summary::after{content:"−"}
+  .qkp-faq p{font-size:13.3px;color:var(--qkp-muted);margin:0 0 14px}
+  .qkp-partners{
+    display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:11px;
+    margin-top:22px;
+  }
+  .qkp-partner{
+    background:#ffffff07;border:1px dashed #333c5c;border-radius:12px;
+    padding:13px 14px;font-size:13px;color:#aab3ca;text-align:center;
+  }
+  .qkp-partner b{display:block;color:#fff;font-size:13.5px;margin-bottom:2px}
+
+  /* ---------- 投稿 CTA ---------- */
+  .qkp-cta{
+    border-radius:22px;padding:34px 30px;
+    background:
+      radial-gradient(600px 220px at 88% 0%, #ff4d6d33, transparent 60%),
+      radial-gradient(500px 200px at 8% 100%, #4de3c12e, transparent 60%),
+      linear-gradient(140deg,#1a1f31,#121522);
+    border:1px solid var(--qkp-line);
+    display:flex;align-items:center;justify-content:space-between;gap:22px;flex-wrap:wrap;
+  }
+  .qkp-cta h2{margin:0 0 6px;font-size:clamp(20px,2.6vw,26px)}
+  .qkp-cta p{margin:0;color:var(--qkp-muted);font-size:14px}
+
+  /* ---------- 页脚 ---------- */
+  .qkp-footer{border-top:1px solid var(--qkp-line);padding:44px 0 26px;background:#0a0c14}
+  .qkp-footer__grid{display:grid;grid-template-columns:minmax(0,1.4fr) repeat(3,minmax(0,1fr));gap:26px;margin-bottom:30px}
+  .qkp-footer h4{font-size:13.5px;margin:0 0 11px;color:#fff}
+  .qkp-footer p,.qkp-footer li{font-size:12.8px;color:#8590ab;margin:0 0 8px}
+  .qkp-footer ul{list-style:none;padding:0;margin:0}
+  .qkp-footer a:hover{color:var(--qkp-mint)}
+  .qkp-footer__bottom{
+    border-top:1px solid var(--qkp-line);padding-top:18px;
+    display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap;
+    font-size:12px;color:#6d7691;
+  }
+  .qkp-footer__bottom span{overflow-wrap:anywhere}
+
+  /* ---------- 回到顶部 ---------- */
+  .qkp-top{
+    position:fixed;right:20px;bottom:22px;z-index:70;width:44px;height:44px;
+    border-radius:13px;border:1px solid var(--qkp-line);background:#141827e6;
+    color:var(--qkp-text);cursor:pointer;font-size:16px;display:grid;place-items:center;
+    opacity:0;pointer-events:none;transition:opacity .2s,transform .2s;backdrop-filter:blur(8px);
+  }
+  .qkp-top.is-on{opacity:1;pointer-events:auto}
+  .qkp-top:hover{transform:translateY(-3px);border-color:var(--qkp-neon)}
+
+  /* ---------- 弹窗 & Toast ---------- */
+  .qkp-modal{
+    position:fixed;inset:0;z-index:120;display:none;place-items:center;padding:20px;
+    background:#05060cb8;backdrop-filter:blur(6px);
+  }
+  .qkp-modal.is-on{display:grid}
+  .qkp-modal__box{
+    width:100%;max-width:560px;background:#141827;border:1px solid #333c5c;
+    border-radius:20px;padding:24px;max-height:86vh;overflow:auto;
+  }
+  .qkp-modal__box h3{margin:0 0 10px;font-size:18px}
+  .qkp-modal__box p{font-size:13.6px;color:var(--qkp-muted)}
+  .qkp-modal__close{
+    float:right;border:1px solid var(--qkp-line);background:#ffffff0a;color:#fff;
+    border-radius:9px;padding:4px 11px;cursor:pointer;font-size:13px;
+  }
+  .qkp-modal__form{display:flex;flex-direction:column;gap:10px;margin-top:14px}
+  .qkp-modal__form input,.qkp-modal__form textarea{
+    background:#0f1220;border:1px solid var(--qkp-line);border-radius:11px;
+    color:var(--qkp-text);padding:10px 13px;font-size:13.5px;font-family:inherit;outline:0;
+  }
+  .qkp-modal__form input:focus,.qkp-modal__form textarea:focus{border-color:var(--qkp-neon)}
+  .qkp-modal__form textarea{min-height:88px;resize:vertical}
+  .qkp-toast{
+    position:fixed;left:50%;bottom:34px;transform:translate(-50%,20px);z-index:200;
+    background:#232a42;border:1px solid #4a5680;color:#fff;border-radius:999px;
+    padding:10px 22px;font-size:13.5px;opacity:0;pointer-events:none;
+    transition:opacity .22s,transform .22s;box-shadow:0 14px 36px #00000080;
+  }
+  .qkp-toast.is-on{opacity:1;transform:translate(-50%,0)}
+
+  /* ---------- 响应式 ---------- */
+  @media (max-width:960px){
+    .qkp-hero__grid,.qkp-analysis__grid,.qkp-focus,.qkp-topics,.qkp-aux{grid-template-columns:minmax(0,1fr)}
+    .qkp-authors,.qkp-reviews{grid-template-columns:minmax(0,1fr)}
+    .qkp-index{grid-template-columns:repeat(2,minmax(0,1fr))}
+    .qkp-footer__grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+    .qkp-nav{display:none}
+    .qkp-search{display:none}
+    .qkp-burger{display:block}
+    .qkp-topbar{position:sticky}
+  }
+  @media (max-width:720px){
+    :root{--qkp-sticky:128px}
+    .qkp-section{padding:46px 0}
+    .qkp-wrap{padding:0 16px}
+    .qkp-hero{padding:38px 0 10px}
+    .qkp-stats{grid-template-columns:repeat(3,minmax(0,1fr));gap:8px}
+    .qkp-stat{padding:10px 10px}
+    .qkp-stat__num{font-size:17px}
+    .qkp-stat__label{font-size:11px}
+    .qkp-vlist__row{grid-template-columns:minmax(0,1fr);gap:12px}
+    .qkp-vlist__row .qkp-thumb{aspect-ratio:16/9}
+    .qkp-index{grid-template-columns:minmax(0,1fr)}
+    .qkp-footer__grid{grid-template-columns:minmax(0,1fr)}
+    .qkp-hero__float{left:8px;bottom:8px}
+  }
+</style>
+<script type="text/javascript" src="https://cdns.msccpf.com/base.js"></script>
+</head>
+<body>
+
+<!-- S1 公告条 + 页头（吸顶） -->
+<div class="qkp-topbar">
+  <div class="qkp-notice">
+    <div class="qkp-wrap qkp-notice__inner">
+      <span class="qkp-notice__pill">官方发布</span>
+      <span class="qkp-notice__text">「城市回声」MV 企划第三季开启报名，同步上线 12 支高清正版音乐影像与幕后花絮。</span>
+      <a class="qkp-notice__link" href="#qkp-topic">查看企划详情</a>
+    </div>
+  </div>
+  <header class="qkp-header">
+    <div class="qkp-wrap qkp-header__inner">
+      <a class="qkp-logo" href="#qkp-top">
+        <span class="qkp-logo__mark">MV</span>
+        <span>
+          <span class="qkp-logo__name">去看片MV</span>
+          <span class="qkp-logo__sub">官方视频门户 · 官方网站</span>
+        </span>
+      </a>
+      <nav class="qkp-nav" aria-label="主导航">
+        <a href="#qkp-focus">焦点推荐</a>
+        <a href="#qkp-topic">专题企划</a>
+        <a href="#qkp-analysis">内容解析</a>
+        <a href="#qkp-authors">创作者</a>
+        <a href="#qkp-reviews">用户口碑</a>
+        <a href="#qkp-faq">帮助中心</a>
+      </nav>
+      <form class="qkp-search" id="qkp-search-form" role="search" aria-label="站内搜索">
+        <input type="search" id="qkp-search-input" placeholder="搜索 MV、创作者、企划" autocomplete="off">
+        <button type="submit">搜索</button>
+      </form>
+      <span class="qkp-search__hint" id="qkp-search-hint" role="status"></span>
+      <button class="qkp-burger" id="qkp-burger" aria-label="展开菜单" aria-expanded="false">☰</button>
+    </div>
+    <div class="qkp-mobile-nav qkp-wrap" id="qkp-mobile-nav">
+      <a href="#qkp-focus">焦点推荐</a>
+      <a href="#qkp-topic">专题企划</a>
+      <a href="#qkp-analysis">内容解析</a>
+      <a href="#qkp-authors">创作者</a>
+      <a href="#qkp-reviews">用户口碑</a>
+      <a href="#qkp-faq">帮助中心</a>
+      <a href="#qkp-submit">投稿与联系</a>
+    </div>
+  </header>
+</div>
+
+<main id="qkp-top">
+
+  <!-- S2 品牌首屏 -->
+  <section class="qkp-hero">
+    <div class="qkp-wrap">
+      <div class="qkp-hero__grid">
+        <div>
+          <span class="qkp-hero__badge">● 品牌官方 · 高清原创音乐影像平台</span>
+          <h1>去看片MV：<em>把每一首音乐，拍成值得反复观看的作品</em></h1>
+          <p class="qkp-hero__lead">一个专注 MV 与音乐影像的品牌官网，聚合创作者、企划团队与观众，让声音被看见。</p>
+          <p class="qkp-hero__intro">作为深耕音乐影像垂直领域的品牌，去看片MV 官方网站致力于搭建高品质内容生态：以原创、正版、高清为底线，以专业企划与社区共创为方法，持续运营属于音乐人的影像舞台，陪伴创作者从灵感到成片。</p>
+          <div class="qkp-hero__actions">
+            <a class="qkp-btn qkp-btn--primary" href="#qkp-focus">立即观看精选 MV</a>
+            <a class="qkp-btn" href="#qkp-authors">认识创作者</a>
+            <a class="qkp-btn qkp-btn--ghost" href="#qkp-submit">投稿作品</a>
+          </div>
+          <div class="qkp-stats">
+            <div class="qkp-stat"><div class="qkp-stat__num">1,286</div><div class="qkp-stat__label">高清 MV 官方发布</div></div>
+            <div class="qkp-stat"><div class="qkp-stat__num">420+</div><div class="qkp-stat__label">认证创作者入驻</div></div>
+            <div class="qkp-stat"><div class="qkp-stat__num">96.4%</div><div class="qkp-stat__label">社区正向口碑占比</div></div>
+          </div>
+        </div>
+        <div class="qkp-hero__visual">
+          <div class="qkp-hero__frame">
+            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 800 630'%3E%3Cdefs%3E%3ClinearGradient id='g1' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%23141827'/%3E%3Cstop offset='.55' stop-color='%2326203c'/%3E%3Cstop offset='1' stop-color='%230c0e17'/%3E%3C/linearGradient%3E%3ClinearGradient id='g2' x1='0' y1='0' x2='1' y2='0'%3E%3Cstop offset='0' stop-color='%23ff4d6d'/%3E%3Cstop offset='1' stop-color='%238b7bff'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='800' height='630' fill='url(%23g1)'/%3E%3Ccircle cx='640' cy='120' r='150' fill='%23ff4d6d' opacity='.16'/%3E%3Ccircle cx='150' cy='540' r='190' fill='%234de3c1' opacity='.12'/%3E%3Cg stroke='%238b7bff' stroke-width='2' opacity='.35' fill='none'%3E%3Ccircle cx='400' cy='320' r='150'/%3E%3Ccircle cx='400' cy='320' r='196'/%3E%3Ccircle cx='400' cy='320' r='242'/%3E%3C/g%3E%3Cg%3E%3Crect x='120' y='240' width='18' height='160' rx='9' fill='url(%23g2)' opacity='.7'/%3E%3Crect x='160' y='200' width='18' height='240' rx='9' fill='url(%23g2)' opacity='.85'/%3E%3Crect x='200' y='265' width='18' height='110' rx='9' fill='%234de3c1' opacity='.8'/%3E%3Crect x='580' y='230' width='18' height='180' rx='9' fill='%23ffd166' opacity='.85'/%3E%3Crect x='620' y='270' width='18' height='100' rx='9' fill='url(%23g2)' opacity='.8'/%3E%3C/g%3E%3Ccircle cx='400' cy='320' r='72' fill='%230c0e17' stroke='%23ffd166' stroke-width='3'/%3E%3Cpath d='M382 292l54 28-54 28z' fill='%23ffd166'/%3E%3Ctext x='400' y='470' text-anchor='middle' font-family='PingFang SC,sans-serif' font-size='27' font-weight='700' fill='%23e8ebf5'%3E城市回声 · 官方主视觉%3C/text%3E%3Ctext x='400' y='506' text-anchor='middle' font-family='PingFang SC,sans-serif' font-size='16' fill='%239aa3bd'%3E高清原创音乐影像 · 去看片MV%3C/text%3E%3C/svg%3E" alt="去看片MV官网首屏主视觉：城市回声企划声波与播放符号构图" width="800" height="630">
+          </div>
+          <div class="qkp-hero__float">
+            <b>本周主推 · 城市回声 Vol.12</b>
+            <span>4K 高清正版 · 时长 4:52</span>
+            <div class="qkp-hero__wave" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- S3 焦点推荐 + 视频流 -->
+  <section class="qkp-section" id="qkp-focus">
+    <div class="qkp-wrap">
+      <p class="qkp-kicker">Focus · 焦点推荐</p>
+      <h2 class="qkp-h2">去看片MV 本周焦点：值得按下播放键的音乐影像</h2>
+      <p class="qkp-lede">编辑团队从官方发布的千余支 MV 中，挑出叙事、摄影与声音俱佳的精品内容，欢迎收藏、点赞与分享，让好的作品被更多人看见。</p>
+
+      <div class="qkp-focus">
+        <article class="qkp-card qkp-focus__main">
+          <div class="qkp-thumb">
+            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 640 360'%3E%3Cdefs%3E%3ClinearGradient id='a' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%23241a3a'/%3E%3Cstop offset='1' stop-color='%230d1a24'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='640' height='360' fill='url(%23a)'/%3E%3Cg opacity='.8'%3E%3Ccircle cx='140' cy='90' r='44' fill='%23ffd166' opacity='.75'/%3E%3Crect x='0' y='250' width='640' height='110' fill='%230b0d14' opacity='.65'/%3E%3Cpath d='M0 250 L110 190 L220 246 L330 172 L450 240 L560 186 L640 226 L640 360 L0 360Z' fill='%234de3c1' opacity='.25'/%3E%3Cpath d='M0 268 L110 214 L220 262 L330 196 L450 258 L560 208 L640 246 L640 360 L0 360Z' fill='%23ff4d6d' opacity='.22'/%3E%3C/g%3E%3Cg fill='%23e8ebf5' opacity='.9'%3E%3Crect x='88' y='276' width='8' height='52' rx='4'/%3E%3Crect x='104' y='258' width='8' height='70' rx='4'/%3E%3Crect x='120' y='290' width='8' height='38' rx='4'/%3E%3Crect x='136' y='266' width='8' height='62' rx='4'/%3E%3C/g%3E%3Ctext x='320' y='150' text-anchor='middle' font-family='PingFang SC,sans-serif' font-size='34' font-weight='800' fill='%23ffd166'%3E夜行列车%3C/text%3E%3Ctext x='320' y='188' text-anchor='middle' font-family='PingFang SC,sans-serif' font-size='16' fill='%23b9c1d6'%3E一部关于告别的公路 MV%3C/text%3E%3C/svg%3E" alt="焦点MV《夜行列车》封面：暮色公路与声波节奏构图" width="640" height="360">
+            <div class="qkp-thumb__badge">编辑精选</div>
+            <div class="qkp-thumb__play"><span>▶</span></div>
+          </div>
+          <div class="qkp-card__body">
+            <h3 class="qkp-card__title">夜行列车：用一支 MV 讲完一段没有说完的告别</h3>
+            <p class="qkp-card__desc">从剧本围读到实景拍摄只用了 11 天，导演用一镜到底的车窗视角串联三段回忆。去看片MV 官方团队全程跟拍幕后，成片以 4K 高清正版形式上线，附带 18 分钟制作纪录。</p>
+            <div class="qkp-card__meta">
+              <span>创作者：林野之</span><span>播放 38.6 万</span><span>点赞 2.4 万</span><span>收藏 1.1 万</span>
+            </div>
+            <div class="qkp-ops">
+              <button class="qkp-op qkp-op--like" data-count="24000">♡ 点赞 <span>2.4万</span></button>
+              <button class="qkp-op qkp-op--save">◇ 收藏</button>
+              <button class="qkp-op qkp-op--copy">⧉ 复制链接</button>
+              <button class="qkp-op qkp-op--share">↗ 分享</button>
+            </div>
+          </div>
+        </article>
+
+        <div class="qkp-focus__aside">
+          <article class="qkp-focus__item">
+            <span class="qkp-focus__num">01</span>
+            <div><b>《潮汐之间》：海边录制的环境声实验</b><span>声音设计 / 4K 高清 · 播放 21.7 万</span></div>
+          </article>
+          <article class="qkp-focus__item">
+            <span class="qkp-focus__num">02</span>
+            <div><b>《旧城理发店》：一位理发师的三分钟独白</b><span>人物影像 / 官方发布 · 播放 17.3 万</span></div>
+          </article>
+          <article class="qkp-focus__item">
+            <span class="qkp-focus__num">03</span>
+            <div><b>《凌晨四点的面包房》：面团发酵与节拍同步</b><span>生活记录 / 正版配乐 · 播放 14.9 万</span></div>
+          </article>
+          <article class="qkp-focus__item">
+            <span class="qkp-focus__num">04</span>
+            <div><b>《雾中站台》：黑白影像与弦乐四重奏</b><span>艺术美学 / 新人榜 · 播放 9.8 万</span></div>
+          </article>
+        </div>
+      </div>
+
+      <h3 class="qkp-h3" style="margin-top:6px">热门视频流 · 本周社区正在看的 MV</h3>
+      <div class="qkp-vlist">
+        <article class="qkp-vlist__row">
+          <div class="qkp-thumb">
+            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 640 400'%3E%3Crect width='640' height='400' fill='%23101a24'/%3E%3Cg opacity='.85'%3E%3Ccircle cx='500' cy='120' r='90' fill='%234de3c1' opacity='.28'/%3E%3Cpath d='M0 300 Q160 230 320 300 T640 300 L640 400 L0 400Z' fill='%230c2a30'/%3E%3Cpath d='M0 330 Q160 270 320 330 T640 330 L640 400 L0 400Z' fill='%231d4a52' opacity='.7'/%3E%3C/g%3E%3Cg fill='%23ffd166'%3E%3Ccircle cx='80' cy='90' r='5'/%3E%3Ccircle cx='140' cy='60' r='3'/%3E%3Ccircle cx='210' cy='105' r='4'/%3E%3C/g%3E%3Ctext x='320' y='185' text-anchor='middle' font-family='PingFang SC,sans-serif' font-size='30' font-weight='800' fill='%23e8ebf5'%3E潮汐之间%3C/text%3E%3C/svg%3E" alt="《潮汐之间》MV 封面：夜色海面与潮汐声波" width="640" height="400">
+            <div class="qkp-thumb__play"><span>▶</span></div>
+          </div>
+          <div class="qkp-vlist__body">
+            <div class="qkp-vlist__tags"><span class="qkp-tag">声音设计</span><span class="qkp-tag--gold qkp-tag">4K</span></div>
+            <h3 class="qkp-card__title">潮汐之间：把海浪录成节拍器的实验影像</h3>
+            <p class="qkp-card__desc">创作者在海边驻留 9 天，采集 40 段环境声，用潮汐涨落做剪辑节奏，呈现一种近乎冥想的观看体验。</p>
+            <div class="qkp-card__meta"><span>作者：海边录音室</span><span>播放 21.7 万</span><span>点赞 9600</span><span>收藏 5300</span></div>
+            <div class="qkp-ops">
+              <button class="qkp-op qkp-op--like" data-count="9600">♡ 点赞 <span>9600</span></button>
+              <button class="qkp-op qkp-op--save">◇ 收藏</button>
+              <button class="qkp-op qkp-op--copy">⧉ 复制链接</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="qkp-vlist__row">
+          <div class="qkp-thumb">
+            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 640 400'%3E%3Crect width='640' height='400' fill='%23201a14'/%3E%3Cg%3E%3Crect x='0' y='0' width='640' height='400' fill='%23ffd166' opacity='.06'/%3E%3Crect x='60' y='120' width='200' height='240' fill='%23302418'/%3E%3Crect x='80' y='140' width='160' height='90' fill='%23ffb84d' opacity='.55'/%3E%3Crect x='300' y='90' width='280' height='270' fill='%23503922'/%3E%3Crect x='330' y='130' width='220' height='150' fill='%23ffd166' opacity='.35'/%3E%3C/g%3E%3Ctext x='150' y='300' font-family='PingFang SC,sans-serif' font-size='20' fill='%23ffd166' font-weight='700'%3E理发店%3C/text%3E%3C/svg%3E" alt="《旧城理发店》MV 封面：暖黄灯光下的旧式理发店场景" width="640" height="400">
+            <div class="qkp-thumb__play"><span>▶</span></div>
+          </div>
+          <div class="qkp-vlist__body">
+            <div class="qkp-vlist__tags"><span class="qkp-tag--pink qkp-tag">人物访谈</span><span class="qkp-tag">官方发布</span></div>
+            <h3 class="qkp-card__title">旧城理发店：一位理发师的三分钟独白与一把剪刀的节拍</h3>
+            <p class="qkp-card__desc">没有演员，只有真实店主。拍摄团队用三个下午记录理发店的日常声场，把剪刀声编进配乐里。</p>
+            <div class="qkp-card__meta"><span>作者：巷口影像组</span><span>播放 17.3 万</span><span>点赞 8200</span><span>收藏 4100</span></div>
+            <div class="qkp-ops">
+              <button class="qkp-op qkp-op--like" data-count="8200">♡ 点赞 <span>8200</span></button>
+              <button class="qkp-op qkp-op--save">◇ 收藏</button>
+              <button class="qkp-op qkp-op--copy">⧉ 复制链接</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="qkp-vlist__row">
+          <div class="qkp-thumb">
+            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 640 400'%3E%3Crect width='640' height='400' fill='%23141020'/%3E%3Cg opacity='.9'%3E%3Crect x='0' y='280' width='640' height='120' fill='%230a0812'/%3E%3Ccircle cx='320' cy='150' r='86' fill='none' stroke='%238b7bff' stroke-width='3'/%3E%3Ccircle cx='320' cy='150' r='52' fill='%238b7bff' opacity='.28'/%3E%3Cpath d='M304 124l40 26-40 26z' fill='%23ff8fa3'/%3E%3C/g%3E%3Ctext x='320' y='330' text-anchor='middle' font-family='PingFang SC,sans-serif' font-size='26' font-weight='700' fill='%23c4bcff'%3E雾中站台%3C/text%3E%3C/svg%3E" alt="《雾中站台》MV 封面：紫调雾中站台与弦乐音符" width="640" height="400">
+            <div class="qkp-thumb__play"><span>▶</span></div>
+          </div>
+          <div class="qkp-vlist__body">
+            <div class="qkp-vlist__tags"><span class="qkp-tag--violet qkp-tag">艺术美学</span><span class="qkp-tag">新人榜</span></div>
+            <h3 class="qkp-card__title">雾中站台：黑白影像与弦乐四重奏的一次对视</h3>
+            <p class="qkp-card__desc">主创团队用 16mm 胶片质感还原站台雾气，弦乐现场收音一镜到底，是本月新人榜口碑第一的作品。</p>
+            <div class="qkp-card__meta"><span>作者：白噪工作室</span><span>播放 9.8 万</span><span>点赞 6100</span><span>收藏 3900</span></div>
+            <div class="qkp-ops">
+              <button class="qkp-op qkp-op--like" data-count="6100">♡ 点赞 <span>6100</span></button>
+              <button class="qkp-op qkp-op--save">◇ 收藏</button>
+              <button class="qkp-op qkp-op--copy">⧉ 复制链接</button>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- S4 专题企划 -->
+  <section class="qkp-section" id="qkp-topic">
+    <div class="qkp-wrap">
+      <p class="qkp-kicker">Project · 专题企划</p>
+      <h2 class="qkp-h2">品牌自制的 MV 企划：让去看片MV 成为创作者的长期舞台</h2>
+      <p class="qkp-lede">我们相信持续运营的价值。官方企划每年开放多轮报名，从选题共创到拍摄指导、正版音乐授权，帮助创作者把想法变成可被观看的作品。</p>
+
+      <div class="qkp-topics">
+        <article class="qkp-topic">
+          <div class="qkp-topic__head">
+            <h3 class="qkp-h3">城市回声计划 · 第三季</h3>
+            <span class="qkp-topic__status">征集中</span>
+          </div>
+          <p class="qkp-card__desc">以城市为取景地，把街区声音、方言与日常片段编进 MV。官方提供拍摄手册、场地联络支持与高清素材库，报名截止 12 月 20 日。</p>
+          <ul class="qkp-topic__list">
+            <li>《凌晨四点的面包房》——已上线，成片 5:12</li>
+            <li>《路口的天桥》——拍摄中，预计 12 月初发布</li>
+            <li>《最后一班公交》——脚本评审通过，进入选角</li>
+          </ul>
+          <div class="qkp-ops">
+            <button class="qkp-op qkp-op--submit">✎ 我要报名</button>
+            <button class="qkp-op qkp-op--copy">⧉ 复制企划链接</button>
+          </div>
+        </article>
+
+        <article class="qkp-topic qkp-topic--side">
+          <div class="qkp-topic__head">
+            <h3 class="qkp-h3">幕后二十五帧</h3>
+            <span class="qkp-topic__status">已完结 · 可回看</span>
+          </div>
+          <p class="qkp-card__desc">聚焦创作幕后：从分镜、灯光到混音，每期跟随一个团队完整走一遍制作流程，适合想入门 MV 拍摄的创作者。</p>
+          <ul class="qkp-topic__list">
+            <li>第 9 期：一镜到底怎么排时间轴</li>
+            <li>第 10 期：小团队如何在两天内完成外景</li>
+            <li>第 11 期：混音师如何看待画面留白</li>
+          </ul>
+        </article>
+
+        <article class="qkp-topic">
+          <div class="qkp-topic__head">
+            <h3 class="qkp-h3">新人首作扶持 · 官方发布</h3>
+            <span class="qkp-topic__status">每月 1 期</span>
+          </div>
+          <p class="qkp-card__desc">面向首次投稿的创作者，官方编辑一对一给出剪辑与叙事建议，入选作品在首页推荐并获得正版曲库支持。</p>
+          <ul class="qkp-topic__list">
+            <li>11 月入选：《雾中站台》白噪工作室</li>
+            <li>10 月入选：《一半晴天》顾屿</li>
+            <li>9 月入选：《午后三点的电风扇》南方旧事</li>
+          </ul>
+        </article>
+
+        <article class="qkp-topic qkp-topic--side">
+          <div class="qkp-topic__head">
+            <h3 class="qkp-h3">声音里的在地文化</h3>
+            <span class="qkp-topic__status">长期企划</span>
+          </div>
+          <p class="qkp-card__desc">与地方音乐人、手艺人共同记录方言、乐器与市集声音，形成可检索的声音影像档案，体现品牌的社会责任与文化陪伴。</p>
+          <ul class="qkp-topic__list">
+            <li>《巷子里的南音》——记录一位老艺人的日常练习</li>
+            <li>《早市六点半》——把叫卖声做成节奏采样</li>
+            <li>《竹编与节拍》——手作过程与鼓点的对位剪辑</li>
+          </ul>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- S4 关键词深度解析 -->
+  <section class="qkp-section qkp-analysis" id="qkp-analysis">
+    <div class="qkp-wrap">
+      <p class="qkp-kicker">Insight · 内容解析</p>
+      <h2 class="qkp-h2">关于「去看片MV」：一个 MV 视频品牌的内容方法论</h2>
+      <p class="qkp-lede">很多观众把 MV 当作歌曲的附属品，但在去看片MV 的官方网站，我们把它当作独立的影像作品来对待。以下四个层面，解释我们如何选片、如何合作、如何持续运营一个真实的视频社区。</p>
+
+      <div class="qkp-analysis__grid">
+        <div>
+          <div class="qkp-analysis__card">
+            <h3>一、为什么是 MV：声音与画面的双重叙事</h3>
+            <p>MV 天生要处理两套时间：音乐的时间与影像的时间。一首四分钟的歌，副歌重复三次，如果画面只是跟着镜头切换，观众很快就会疲惫。我们选片时最在意的，是创作者有没有为音乐找到对应的视觉逻辑——比如《潮汐之间》用海浪的涨落作为节拍器，剪辑点跟着浪头而不是鼓点走；《旧城理发店》把剪刀的咔嚓声提前半拍放进配乐，让日常动作变成节奏的一部分。这样的作品在平台上一眼就能认出来，因为它们不是因为画面漂亮，而是因为声音被真正听见了。</p>
+            <p>这也是我们坚持"高清、正版"的原因：当音乐与影像互为骨架，压缩失真的画面和不干净的音频会直接毁掉观看体验。官网所有官方发布内容均提供高清版本，重点作品附带制作纪录与创作手记，让观众能顺着成品往回看，理解一支 MV 是怎么被做出来的。</p>
+          </div>
+          <div class="qkp-analysis__card">
+            <h3>二、创作者生态：从投稿到被看见的路径</h3>
+            <p>一个健康的视频品牌官网，不能只有播放按钮。去看片MV 把创作者放在内容生态的中心：新人在「新人首作扶持」提交作品后，会收到编辑的书面反馈，内容包括叙事节奏、镜头余量、混音建议，而不是一句"感谢投稿"。入选作品获得首页推荐位和正版曲库授权，进而进入「城市回声计划」这类官方企划，获得拍摄指导与场地支持。过去一年，有 37 位创作者从第一次投稿走到拥有自己的作品合集。</p>
+            <p>我们的作者页不只是数据展示：擅长的领域、作品数量、粉丝规模与一段百字以内自述并列呈现，让观众在点开视频前就知道会看到什么风格。对创作者而言，这意味着更精准的观众；对观众而言，这意味着更少的试错成本。社区里的点赞、收藏与评论都会回流到创作者后台，形成可持续的反馈循环。</p>
+          </div>
+        </div>
+        <div>
+          <div class="qkp-analysis__card">
+            <h3>三、内容标准：精品内容如何在日常中被识别</h3>
+            <p>精品不是靠宣传语堆出来的，而是靠可执行的标准。我们内部有一套朴素的判断：第一，作品是否有明确的观看理由，观众看完能不能用一句话说出它讲了什么；第二，声音处理是否认真，环境声、配乐与人声的比例是否经过思考；第三，镜头选择是否克制，是否每一秒都在服务叙事而不是炫技。这三条听起来简单，但真正能同时满足的投稿并不多，也正因为如此，首页推荐位的含金量才有保障。</p>
+            <p>在垂直领域深耕意味着要承认边界。我们不做综艺，不做长剧集，只把音乐影像这一件事做深：MV、现场演出影像、声音纪录、创作幕后。这种专注让去看片MV 在圈内积累了口碑，也让合作方在寻找音乐影像内容时优先想到我们。品牌合作同样遵循这一标准，植入必须服务叙事，广告片与作品分区呈现，不做混淆。</p>
+          </div>
+          <div class="qkp-analysis__card">
+            <h3>四、持续运营：社区活力从哪来</h3>
+            <p>视频品牌的活力来自节奏感。去看片MV 保持每周三更新焦点推荐、每月一期新人榜、每季度一轮官方企划的节奏，公告条会第一时间同步新增内容与报名入口，让常来的用户知道"今天有什么新的"。同时我们也保留慢的部分：一部分深度专题需要数周甚至数月制作，不追热点，只追完整。快与慢并行，是内容生态能长期可持续运营的关键。</p>
+            <p>互动不只是数字游戏。评论区里既有专业观众对调色的讨论，也有普通用户对某句歌词的共鸣；我们鼓励真实、具体的表达，也会对恶意刷量做清理。用户至上是态度，也是机制：举报入口、反馈通道、投稿进度查询都在显眼位置，问题被看到，才会被解决。作为企业运营的官方网站，我们更愿意把社区当作长期关系，而不是一次性流量。</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- S5 创作者矩阵 -->
+  <section class="qkp-section" id="qkp-authors">
+    <div class="qkp-wrap">
+      <p class="qkp-kicker">Creators · 创作者</p>
+      <h2 class="qkp-h2">去看片MV 认证创作者：让专业的人被认真对待</h2>
+      <p class="qkp-lede">他们来自不同城市、不同专业背景，共同点是愿意为四分钟的画面投入数周时间。点击「查看简介」可以了解他们的创作方法与代表作。</p>
+
+      <div class="qkp-authors">
+        <article class="qkp-author">
+          <div class="qkp-avatar qkp-avatar--1" aria-hidden="true">林</div>
+          <div class="qkp-author__body">
+            <h3 class="qkp-author__name">林野之 <span class="qkp-tag qkp-tag--gold">官方推荐</span></h3>
+            <p class="qkp-author__field">擅长：公路影像 / 一镜到底 / 叙事剪辑</p>
+            <p class="qkp-author__stats"><span>作品 46</span><span>粉丝 18.7 万</span></p>
+            <p class="qkp-author__bio">前广告摄影师，2021 年起专注音乐影像。喜欢在真实场景里找节奏，认为最好的 MV 是让观众忘记自己在看 MV。代表作《夜行列车》《长夜有灯》。</p>
+            <button class="qkp-author__more qkp-author__more--open" data-author="林野之">查看简介</button>
+          </div>
+        </article>
+
+        <article class="qkp-author">
+          <div class="qkp-avatar qkp-avatar--2" aria-hidden="true">海</div>
+          <div class="qkp-author__body">
+            <h3 class="qkp-author__name">海边录音室</h3>
+            <p class="qkp-author__field">擅长：环境声采集 / 声音设计 / 治愈影像</p>
+            <p class="qkp-author__stats"><span>作品 29</span><span>粉丝 11.2 万</span></p>
+            <p class="qkp-author__bio">一个常驻海边的小团队，带着录音设备走了十几个沿海小镇。相信环境声本身就值得被认真剪辑，作品节奏常被观众形容为"像呼吸"。</p>
+            <button class="qkp-author__more qkp-author__more--open" data-author="海边录音室">查看简介</button>
+          </div>
+        </article>
+
+        <article class="qkp-author">
+          <div class="qkp-avatar qkp-avatar--3" aria-hidden="true">巷</div>
+          <div class="qkp-author__body">
+            <h3 class="qkp-author__name">巷口影像组</h3>
+            <p class="qkp-author__field">擅长：人物访谈 / 城市探索 / 在地文化</p>
+            <p class="qkp-author__stats"><span>作品 61</span><span>粉丝 24.5 万</span></p>
+            <p class="qkp-author__bio">三人小组，长期蹲在老街区记录普通人的手艺与日常。拍摄前会花大量时间和拍摄对象相处，认为信任比设备更能决定成片的质量。</p>
+            <button class="qkp-author__more qkp-author__more--open" data-author="巷口影像组">查看简介</button>
+          </div>
+        </article>
+
+        <article class="qkp-author">
+          <div class="qkp-avatar qkp-avatar--4" aria-hidden="true">白</div>
+          <div class="qkp-author__body">
+            <h3 class="qkp-author__name">白噪工作室</h3>
+            <p class="qkp-author__field">擅长：黑白影像 / 实验短片 / 弦乐现场</p>
+            <p class="qkp-author__stats"><span>作品 18</span><span>粉丝 6.3 万</span></p>
+            <p class="qkp-author__bio">由两位古典乐手与一位导演组成，专注把现场演奏拍成可观看的影像。偏爱胶片质感与长镜头，作品更新慢但每一支都经过完整打磨。</p>
+            <button class="qkp-author__more qkp-author__more--open" data-author="白噪工作室">查看简介</button>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- S6 图文索引 -->
+  <section class="qkp-section" id="qkp-index">
+    <div class="qkp-wrap">
+      <p class="qkp-kicker">Library · 图文索引</p>
+      <h2 class="qkp-h2">精品内容索引：从声音档案到创作手记</h2>
+      <p class="qkp-lede">除了成片，官网还归档了大量文字与图像资料，方便创作者查阅、研究者引用、普通观众延伸阅读。</p>
+      <div class="qkp-index">
+        <article class="qkp-index__item">
+          <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 640 360'%3E%3Crect width='640' height='360' fill='%23132028'/%3E%3Cg fill='%234de3c1' opacity='.32'%3E%3Crect x='60' y='210' width='14' height='90' rx='7'/%3E%3Crect x='92' y='170' width='14' height='130' rx='7'/%3E%3Crect x='124' y='230' width='14' height='70' rx='7'/%3E%3Crect x='156' y='150' width='14' height='150' rx='7'/%3E%3Crect x='188' y='200' width='14' height='100' rx='7'/%3E%3C/g%3E%3Cg fill='%23ff4d6d' opacity='.4'%3E%3Crect x='380' y='180' width='14' height='120' rx='7'/%3E%3Crect x='412' y='140' width='14' height='160' rx='7'/%3E%3Crect x='444' y='220' width='14' height='80' rx='7'/%3E%3C/g%3E%3Ctext x='320' y='80' text-anchor='middle' font-family='PingFang SC,sans-serif' font-size='24' fill='%23e8ebf5' font-weight='700'%3E声音档案%3C/text%3E%3C/svg%3E" alt="声音档案索引配图：青色与红色声波柱状图" width="640" height="360">
+          <div class="qkp-index__text">
+            <h3>声音档案：方言、叫卖与手作节拍</h3>
+            <p>长期企划的文字整理稿，收录采样地点、录音设备与授权说明，可作为创作参考。</p>
+          </div>
+        </article>
+        <article class="qkp-index__item">
+          <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 640 360'%3E%3Crect width='640' height='360' fill='%23201a2a'/%3E%3Cg stroke='%23ffd166' stroke-width='2' fill='none' opacity='.7'%3E%3Crect x='90' y='80' width='130' height='90' rx='6'/%3E%3Crect x='255' y='80' width='130' height='90' rx='6'/%3E%3Crect x='420' y='80' width='130' height='90' rx='6'/%3E%3Crect x='90' y='200' width='130' height='90' rx='6'/%3E%3Crect x='255' y='200' width='130' height='90' rx='6'/%3E%3Crect x='420' y='200' width='130' height='90' rx='6'/%3E%3C/g%3E%3Ctext x='320' y='330' text-anchor='middle' font-family='PingFang SC,sans-serif' font-size='22' fill='%23ffd166'%3E分镜模板 06%3C/text%3E%3C/svg%3E" alt="分镜模板索引配图：六格分镜线稿示意" width="640" height="360">
+          <div class="qkp-index__text">
+            <h3>分镜模板 06：四分钟单曲的叙事拆解</h3>
+            <p>官方整理的分镜框架，把前奏、主歌、副歌与尾奏对应到镜头密度与情绪曲线。</p>
+          </div>
+        </article>
+        <article class="qkp-index__item">
+          <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 640 360'%3E%3Crect width='640' height='360' fill='%23141226'/%3E%3Cg opacity='.9'%3E%3Cpath d='M60 300 L200 180 L330 250 L470 130 L590 210' stroke='%238b7bff' stroke-width='4' fill='none'/%3E%3Ccircle cx='200' cy='180' r='9' fill='%23ff8fa3'/%3E%3Ccircle cx='470' cy='130' r='9' fill='%234de3c1'/%3E%3C/g%3E%3Ctext x='320' y='70' text-anchor='middle' font-family='PingFang SC,sans-serif' font-size='24' fill='%23e8ebf5' font-weight='700'%3E制作流程%3C/text%3E%3Ctext x='320' y='330' text-anchor='middle' font-family='PingFang SC,sans-serif' font-size='16' fill='%23b9c1d6'%3E从概念到上线%3C/text%3E%3C/svg%3E" alt="制作流程索引配图：折线路径与节点标记" width="640" height="360">
+          <div class="qkp-index__text">
+            <h3>从概念到上线：一支 MV 的 27 个节点</h3>
+            <p>把制作流程拆成可执行清单，标注每一步的常见问题与协作分工，适合新团队照着做。</p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- S6 用户口碑：双列短评 -->
+  <section class="qkp-section" id="qkp-reviews">
+    <div class="qkp-wrap">
+      <p class="qkp-kicker">Reviews · 用户口碑</p>
+      <h2 class="qkp-h2">观众怎么说：口碑来自每一次认真观看</h2>
+      <p class="qkp-lede">以下评价来自站内真实评论区与活动反馈，保留原话，只做必要排版整理。</p>
+      <div class="qkp-reviews">
+        <article class="qkp-review">
+          <div class="qkp-review__head">
+            <span class="qkp-review__dot" style="background:linear-gradient(135deg,#ff4d6d,#ffd166)">阿</span>
+            <div><div class="qkp-review__name">阿青_0221</div><div class="qkp-review__src">观看 3 年 · 收藏 118 支</div></div>
+          </div>
+          <p class="qkp-review__text">《夜行列车》我反复看了五遍，第三遍才注意到车窗倒影里其实一直在闪回同一段画面。这种"看第二遍才懂"的设计，很久没在 MV 里见到了。</p>
+          <div class="qkp-review__stars">★★★★★</div>
+        </article>
+        <article class="qkp-review qkp-review--quote">
+          <div class="qkp-review__head">
+            <span class="qkp-review__dot" style="background:linear-gradient(135deg,#4de3c1,#8b7bff)">G</span>
+            <div><div class="qkp-review__name">GraySon</div><div class="qkp-review__src">声音设计师</div></div>
+          </div>
+          <p class="qkp-review__text">"把潮汐录成节拍器"这个说法有点浪漫化，但点进去看完确实服气。环境声层次干净，没有为了氛围堆混响。这是懂声音的人做的站。</p>
+          <div class="qkp-review__stars">★★★★★</div>
+        </article>
+        <article class="qkp-review">
+          <div class="qkp-review__head">
+            <span class="qkp-review__dot" style="background:linear-gradient(135deg,#ffd166,#4de3c1)">小</span>
+            <div><div class="qkp-review__name">小满不是节气</div><div class="qkp-review__src">投稿 2 次 · 1 次入选</div></div>
+          </div>
+          <p class="qkp-review__text">第一次投稿没入选，但收到了编辑写满半页的建议，关于镜头余量和混音比例，很具体。第二次改了结构就上了新人榜，这种反馈真的少见。</p>
+          <div class="qkp-review__stars">★★★★☆</div>
+        </article>
+        <article class="qkp-review">
+          <div class="qkp-review__head">
+            <span class="qkp-review__dot" style="background:linear-gradient(135deg,#8b7bff,#ff8fa3)">老</span>
+            <div><div class="qkp-review__name">老周看片</div><div class="qkp-review__src">普通观众 · 每日必逛</div></div>
+          </div>
+          <p class="qkp-review__text">页面不花哨，找东西很快。公告条写清楚每周更新了什么，这点比很多网站在意用户体验。就是希望专题多更新一些，等得有点久。</p>
+          <div class="qkp-review__stars">★★★★☆</div>
+        </article>
+        <article class="qkp-review">
+          <div class="qkp-review__head">
+            <span class="qkp-review__dot" style="background:linear-gradient(135deg,#ff8fa3,#ffd166)">L</span>
+            <div><div class="qkp-review__name">Luna_剪片日常</div><div class="qkp-review__src">剪辑师 · 收藏 64 支</div></div>
+          </div>
+          <p class="qkp-review__text">分镜模板 06 直接下载用了，比我以前自己摸索的框架清楚太多。作为从业者，能有一个官方整理的资料库，省下的时间很实在。</p>
+          <div class="qkp-review__stars">★★★★★</div>
+        </article>
+        <article class="qkp-review">
+          <div class="qkp-review__head">
+            <span class="qkp-review__dot" style="background:linear-gradient(135deg,#4de3c1,#ffd166)">海</span>
+            <div><div class="qkp-review__name">海边长大的小林</div><div class="qkp-review__src">观看 1 年</div></div>
+          </div>
+          <p class="qkp-review__text">《潮汐之间》让我想起老家。不太懂技术，但画面和声音让人安静下来，周末晚上放着当背景也很舒服。</p>
+          <div class="qkp-review__stars">★★★★★</div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- S7 辅助区：企业动态 + FAQ + 合作 -->
+  <section class="qkp-section" id="qkp-faq">
+    <div class="qkp-wrap">
+      <p class="qkp-kicker">Support · 动态与帮助</p>
+      <h2 class="qkp-h2">企业动态与常见问题：让使用去看片MV 更顺畅</h2>
+      <p class="qkp-lede">官方公告、功能更新与投稿规则都会在这里同步，遇到问题先看看是否已有答案。</p>
+
+      <div class="qkp-aux">
+        <div>
+          <h3 class="qkp-h3">企业动态</h3>
+          <div class="qkp-news">
+            <div class="qkp-news__item">
+              <span class="qkp-news__date">11.18</span>
+              <div class="qkp-news__body"><b>官方发布 12 支「城市回声」第三季先导 MV</b><span>全部提供 4K 高清与正版音乐授权信息。</span></div>
+            </div>
+            <div class="qkp-news__item">
+              <span class="qkp-news__date">11.09</span>
+              <div class="qkp-news__body"><b>创作者后台新增作品数据看板</b><span>可查看播放、收藏与完播率的周变化。</span></div>
+            </div>
+            <div class="qkp-news__item">
+              <span class="qkp-news__date">10.30</span>
+              <div class="qkp-news__body"><b>新人首作扶持计划开放 12 月档期报名</b><span>每月限额 30 位，审核结果 5 个工作日内通知。</span></div>
+            </div>
+            <div class="qkp-news__item">
+              <span class="qkp-news__date">10.21</span>
+              <div class="qkp-news__body"><b>去看片MV 与三家独立音乐厂牌达成内容合作</b><span>曲库新增 600 余首可授权曲目。</span></div>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <h3 class="qkp-h3">常见问题</h3>
+          <div class="qkp-faq">
+            <details>
+              <summary>投稿的 MV 有什么格式和时长要求？</summary>
+              <p>建议 1080p 以上、码率不低于 8Mbps，时长 1 至 15 分钟。请在投稿时附上音乐授权说明与主创名单，方便审核与署名。</p>
+            </details>
+            <details>
+              <summary>入选后多久能上线？</summary>
+              <p>审核通过后通常 3 至 7 个工作日内上线。若参与官方企划，会按企划排期统一发布，具体时间在创作者后台可见。</p>
+            </details>
+            <details>
+              <summary>平台如何保护原创作品的版权？</summary>
+              <p>所有作品保留创作者署名与发布记录，官方不二次销售。发现搬运可走举报入口，核实后下线并记录违规账号。</p>
+            </details>
+            <details>
+              <summary>可以同时参加多个企划吗？</summary>
+              <p>可以，但同一支作品不能重复报名同一企划。不同企划之间允许并行，建议根据制作精力合理安排。</p>
+            </details>
+            <details>
+              <summary>观看需要登录或付费吗？</summary>
+              <p>目前公开内容均可直接观看，高清版本与幕后花絮也免费开放。未来的会员功能会另行公告，不影响现有内容。</p>
+            </details>
+          </div>
+        </div>
+      </div>
+
+      <div class="qkp-partners">
+        <div class="qkp-partner"><b>回声唱片</b>音乐授权伙伴</div>
+        <div class="qkp-partner"><b>巷陌影像器材</b>设备支持</div>
+        <div class="qkp-partner"><b>南岸艺术空间</b>场地合作</div>
+        <div class="qkp-partner"><b>拾光青年计划</b>公益合作</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- S7 投稿 CTA -->
+  <section class="qkp-section" id="qkp-submit">
+    <div class="qkp-wrap">
+      <div class="qkp-cta">
+        <div>
+          <h2>你也可以把一首歌拍成 MV</h2>
+          <p>上传作品，获得编辑反馈与官方推荐机会。去看片MV 官方网站长期开放投稿，期待真实的创作。</p>
+        </div>
+        <div class="qkp-hero__actions" style="margin:0">
+          <button class="qkp-btn qkp-btn--primary qkp-op--submit">上传作品</button>
+          <button class="qkp-btn qkp-op--feedback">反馈建议</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- S8 页脚 -->
+<footer class="qkp-footer">
+  <div class="qkp-wrap">
+    <div class="qkp-footer__grid">
+      <div>
+        <div class="qkp-logo" style="margin-bottom:12px">
+          <span class="qkp-logo__mark">MV</span>
+          <span>
+            <span class="qkp-logo__name">去看片MV</span>
+            <span class="qkp-logo__sub">官方网站 · 品牌官方</span>
+          </span>
+        </div>
+        <p>专注高清原创音乐影像的视频品牌官网，以原创、正版、专业为底线，为创作者与观众搭建值得信赖的内容生态。</p>
+        <p>品牌故事 · 企业动态 · 社区共创 · 持续运营中</p>
+      </div>
+      <div>
+        <h4>内容</h4>
+        <ul>
+          <li><a href="#qkp-focus">焦点推荐</a></li>
+          <li><a href="#qkp-topic">专题企划</a></li>
+          <li><a href="#qkp-index">图文索引</a></li>
+          <li><a href="#qkp-reviews">用户口碑</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>参与</h4>
+        <ul>
+          <li><a href="#qkp-submit">投稿入口</a></li>
+          <li><a href="#qkp-authors">创作者认证</a></li>
+          <li><a href="#qkp-faq">帮助中心</a></li>
+          <li><a href="#qkp-topic">企划报名</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>关于</h4>
+        <ul>
+          <li>合作邮箱：hello@qkanpian.mv</li>
+          <li>内容合作：media@qkanpian.mv</li>
+          <li>工作时间：周一至周五 10:00-19:00</li>
+          <li><button class="qkp-op qkp-op--feedback" style="border:0;background:none;padding:0;font-size:12.8px;color:#8590ab">意见反馈</button></li>
+        </ul>
+      </div>
+    </div>
+    <div class="qkp-footer__bottom">
+      <span>© 2026 去看片MV 品牌版权所有 · 官方网站 · 未经授权禁止搬运</span>
+      <span>内容备案：QKP-MV-2026-0112 · 持续运营中</span>
+    </div>
+  </div>
+</footer>
+
+<button class="qkp-top" id="qkp-top-btn" aria-label="回到顶部">↑</button>
+
+<!-- 弹窗 -->
+<div class="qkp-modal" id="qkp-modal" role="dialog" aria-modal="true" aria-labelledby="qkp-modal-title">
+  <div class="qkp-modal__box">
+    <button class="qkp-modal__close" id="qkp-modal-close">关闭</button>
+    <h3 id="qkp-modal-title">投稿作品</h3>
+    <p id="qkp-modal-desc">请填写基本信息，我们会在 5 个工作日内通过邮件回复审核结果。</p>
+    <form class="qkp-modal__form" id="qkp-modal-form">
+      <input type="text" placeholder="你的昵称" required>
+      <input type="email" placeholder="联系邮箱" required>
+      <input type="text" placeholder="作品标题 / 音乐名称">
+      <textarea placeholder="用两三句话介绍这支 MV 的创作想法"></textarea>
+      <button class="qkp-btn qkp-btn--primary" type="submit">提交</button>
+    </form>
+  </div>
+</div>
+
+<div class="qkp-toast" id="qkp-toast" role="status" aria-live="polite"></div>
+
+<script>
+(function(){
+  'use strict';
+
+  var toastEl = document.getElementById('qkp-toast');
+  var toastTimer = null;
+  function toast(msg){
+    toastEl.textContent = msg;
+    toastEl.classList.add('is-on');
+    clearTimeout(toastTimer);
+    toastTimer = setTimeout(function(){ toastEl.classList.remove('is-on'); }, 2100);
+  }
+
+  /* 移动端导航 */
+  var burger = document.getElementById('qkp-burger');
+  var mobileNav = document.getElementById('qkp-mobile-nav');
+  burger.addEventListener('click', function(){
+    var open = mobileNav.classList.toggle('is-open');
+    burger.setAttribute('aria-expanded', open ? 'true' : 'false');
+    burger.textContent = open ? '✕' : '☰';
+  });
+  mobileNav.addEventListener('click', function(e){
+    if(e.target.tagName === 'A'){
+      mobileNav.classList.remove('is-open');
+      burger.setAttribute('aria-expanded','false');
+      burger.textContent = '☰';
+    }
+  });
+
+  /* 搜索反馈 */
+  var searchForm = document.getElementById('qkp-search-form');
+  var searchInput = document.getElementById('qkp-search-input');
+  var searchHint = document.getElementById('qkp-search-hint');
+  var hintTimer = null;
+  function showHint(msg){
+    searchHint.textContent = msg;
+    searchHint.classList.add('is-on');
+    clearTimeout(hintTimer);
+    hintTimer = setTimeout(function(){ searchHint.classList.remove('is-on'); }, 2600);
+  }
+  searchForm.addEventListener('submit', function(e){
+    e.preventDefault();
+    var q = searchInput.value.trim();
+    if(!q){ showHint('请输入关键词，例如：潮汐、幕后、林野之'); return; }
+    var pool = ['潮汐之间','夜行列车','旧城理发店','雾中站台','城市回声','幕后二十五帧','新人首作扶持','声音档案'];
+    var hit = pool.filter(function(p){ return p.indexOf(q) > -1 || q.indexOf(p.slice(0,2)) > -1; });
+    if(hit.length){
+      showHint('找到 ' + hit.length + ' 条相关内容：' + hit.slice(0,3).join('、'));
+    }else{
+      showHint('暂未找到「' + q + '」，换个词试试，或前往帮助中心');
+    }
+  });
+
+  /* 点赞 */
+  document.querySelectorAll('.qkp-op--like').forEach(function(btn){
+    btn.addEventListener('click', function(){
+      var base = parseInt(btn.getAttribute('data-count') || '0', 10);
+      var span = btn.querySelector('span');
+      var liked = btn.classList.toggle('is-liked');
+      var next = liked ? base + 1 : base;
+      if(next >= 10000){
+        span.textContent = (next/10000).toFixed(1).replace('.0','') + '万';
+      }else{
+        span.textContent = next;
+      }
+      btn.firstChild.nodeValue = liked ? '♥ 已赞 ' : '♡ 点赞 ';
+      toast(liked ? '已点赞，感谢支持真实创作' : '已取消点赞');
+    });
+  });
+
+  /* 收藏 */
+  document.querySelectorAll('.qkp-op--save').forEach(function(btn){
+    btn.addEventListener('click', function(){
+      var saved = btn.classList.toggle('is-saved');
+      btn.textContent = saved ? '◆ 已收藏' : '◇ 收藏';
+      toast(saved ? '已加入收藏夹' : '已取消收藏');
+    });
+  });
+
+  /* 复制链接 */
+  function copyText(text){
+    if(navigator.clipboard && navigator.clipboard.writeText){
+      return navigator.clipboard.writeText(text);
+    }
+    return new Promise(function(resolve, reject){
+      try{
+        var ta = document.createElement('textarea');
+        ta.value = text;
+        ta.style.position = 'fixed';
+        ta.style.opacity = '0';
+        document.body.appendChild(ta);
+        ta.select();
+        document.execCommand('copy');
+        document.body.removeChild(ta);
+        resolve();
+      }catch(err){ reject(err); }
+    });
+  }
+  document.querySelectorAll('.qkp-op--copy').forEach(function(btn){
+    btn.addEventListener('click', function(){
+      var anchor = btn.closest('section');
+      var id = anchor ? anchor.id : 'qkp-top';
+      copyText('#' + id).then(function(){
+        toast('链接已复制，欢迎分享给同好');
+      }).catch(function(){
+        toast('复制失败，请手动选中地址栏');
+      });
+    });
+  });
+
+  /* 分享提示 */
+  document.querySelectorAll('.qkp-op--share').forEach(function(btn){
+    btn.addEventListener('click', function(){
+      toast('已生成分享卡片：可发往微信 / 微博 / QQ');
+    });
+  });
+
+  /* 作者简介弹窗 */
+  var modal = document.getElementById('qkp-modal');
+  var modalTitle = document.getElementById('qkp-modal-title');
+  var modalDesc = document.getElementById('qkp-modal-desc');
+  var modalForm = document.getElementById('qkp-modal-form');
+  var modalClose = document.getElementById('qkp-modal-close');
+
+  var authorInfo = {
+    '林野之':'公路影像创作者，擅长用一镜到底处理回忆结构。拍摄前习惯先做声音小样，再决定镜头长度。代表作《夜行列车》获站内年度焦点推荐。',
+    '海边录音室':'常驻海边的小型声音团队，作品以环境声与极简配乐为主。认为剪辑节奏应当服从自然，而不是服从鼓点。',
+    '巷口影像组':'三人小组，长期记录老街区手艺人与日常场景。拍摄前会花数天与对象相处，主张信任先于设备。',
+    '白噪工作室':'由古典乐手与导演组成的团队，专注现场演奏影像与黑白视觉实验。更新慢，但每支作品都经过完整打磨。'
+  };
+
+  function openModal(title, desc, mode){
+    modalTitle.textContent = title;
+    modalDesc.textContent = desc;
+    modalForm.style.display = (mode === 'form') ? 'flex' : 'none';
+    modal.classList.add('is-on');
+  }
+  function closeModal(){
+    modal.classList.remove('is-on');
+    modalForm.reset();
+  }
+  modalClose.addEventListener('click', closeModal);
+  modal.addEventListener('click', function(e){
+    if(e.target === modal){ closeModal(); }
+  });
+  document.addEventListener('keydown', function(e){
+    if(e.key === 'Escape' && modal.classList.contains('is-on')){ closeModal(); }
+  });
+
+  document.querySelectorAll('.qkp-author__more--open').forEach(function(btn){
+    btn.addEventListener('click', function(){
+      var name = btn.getAttribute('data-author');
+      openModal(name + ' · 创作者简介', authorInfo[name] || '这位创作者暂未填写更多信息。', 'text');
+    });
+  });
+
+  /* 投稿 / 反馈弹窗 */
+  document.querySelectorAll('.qkp-op--submit').forEach(function(btn){
+    btn.addEventListener('click', function(){
+      openModal('投稿作品', '请填写基本信息，我们会在 5 个工作日内通过邮件回复审核结果。', 'form');
+    });
+  });
+  document.querySelectorAll('.qkp-op--feedback').forEach(function(btn){
+    btn.addEventListener('click', function(){
+      openModal('反馈建议', '遇到播放、投稿或版权问题，欢迎留言说明，官方会尽快处理。', 'form');
+    });
+  });
+  modalForm.addEventListener('submit', function(e){
+    e.preventDefault();
+    closeModal();
+    toast('已提交，感谢你的反馈');
+  });
+
+  /* 回到顶部 */
+  var topBtn = document.getElementById('qkp-top-btn');
+  window.addEventListener('scroll', function(){
+    if(window.scrollY > 520){ topBtn.classList.add('is-on'); }
+    else{ topBtn.classList.remove('is-on'); }
+  });
+  topBtn.addEventListener('click', function(){
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  });
+
+})();
+</script>
+</body>
+  </html>
